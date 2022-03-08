@@ -350,7 +350,6 @@
             this.currentSlideNum = e
           }
         }
-        console.log(this.$refs.navCont.children[1].children)
         var counter = 0
         this.$refs.navCont.children[1].children.forEach(el => {
 
@@ -394,8 +393,8 @@
           this.$refs.navCont.children.forEach(el => {
 
             if (el.classList.contains("active_menuItem")) {
+              // eslint-disable-next-line no-empty
               if (counter == this.currentSlideNum) {
-                console.log('yoyoyoyo')
               } else {
                 el.classList.remove('active_menuItem')
               }
@@ -413,8 +412,8 @@
             this.$refs.navCont.children.forEach(el => {
 
               if (el.classList.contains("active_menuItem")) {
+                // eslint-disable-next-line no-empty
                 if (counter == this.currentSlideNum) {
-                  console.log('yoyoyoyo')
                 } else {
                   el.classList.remove('active_menuItem')
                 }
@@ -432,8 +431,8 @@
               this.$refs.navCont.children.forEach(el => {
 
                 if (el.classList.contains("active_menuItem")) {
+                  // eslint-disable-next-line no-empty
                   if (counter == this.currentSlideNum) {
-                    console.log('yoyoyoyo')
                   } else {
                     el.classList.remove('active_menuItem')
                   }
@@ -451,8 +450,8 @@
                 this.$refs.navCont.children.forEach(el => {
 
                   if (el.classList.contains("active_menuItem")) {
+                    // eslint-disable-next-line no-empty
                     if (counter == this.currentSlideNum) {
-                      console.log('yoyoyoyo')
                     } else {
                       el.classList.remove('active_menuItem')
                     }
@@ -470,8 +469,8 @@
                   this.$refs.navCont.children.forEach(el => {
 
                     if (el.classList.contains("active_menuItem")) {
+                      // eslint-disable-next-line no-empty
                       if (counter == this.currentSlideNum) {
-                        console.log('yoyoyoyo')
                       } else {
                         el.classList.remove('active_menuItem')
                       }
@@ -483,8 +482,8 @@
                     counter = counter + 1
                   })
                 } else {
+                  // eslint-disable-next-line no-empty
                   if (window.pageYOffset <= 6 * window.innerHeight && window.pageYOffset >= 5 * window.innerHeight) {
-                    console.log('end')
                   }
                 }
               }
